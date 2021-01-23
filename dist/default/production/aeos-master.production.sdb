@@ -1,0 +1,548 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"11 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+[e E2393 . `uc
+READY 1
+RUNNING 2
+WAITING 3
+W_SEMAPHORE 4
+FINISHED 5
+]
+"46 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+[e E2395 . `uc
+READY 1
+RUNNING 2
+WAITING 3
+W_SEMAPHORE 4
+FINISHED 5
+]
+"28 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+[e E7 . `uc
+READY 1
+RUNNING 2
+WAITING 3
+W_SEMAPHORE 4
+FINISHED 5
+]
+"27 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+[e E7 . `uc
+READY 1
+RUNNING 2
+WAITING 3
+W_SEMAPHORE 4
+FINISHED 5
+]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `R(i  1 e 2 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `R(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `R(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul64.c
+[v ___omul __omul `(ul  1 e 4 0 ]
+"14 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+[v _create_task create_task `(ui  1 e 2 0 ]
+"47
+[v _rr_scheduler rr_scheduler `R(s  1 e 2 0 ]
+"92
+[v _os_config os_config `(v  1 e 1 0 ]
+"105
+[v _start_OS start_OS `(v  1 e 1 0 ]
+"112
+[v _task_idle task_idle `R(v  1 e 1 0 ]
+"119
+[v _dispatcher dispatcher `R(v  1 e 1 0 ]
+"20 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+[v _main main `(i  1 e 2 0 ]
+"9 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+[v _pipe_create pipe_create `(v  1 e 1 0 ]
+"10 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+[v _sem_create sem_create `(v  1 e 1 0 ]
+"21
+[v _sem_wait sem_wait `R(v  1 e 1 0 ]
+"36
+[v _sem_post sem_post `R(v  1 e 1 0 ]
+"9 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+[v _seven_seg_init seven_seg_init `(v  1 e 1 0 ]
+"15
+[v _update_ports update_ports `R(v  1 e 1 0 ]
+"47
+[v _seven_seg_set seven_seg_set `R(v  1 e 1 0 ]
+"191 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+[v _SRAMalloc SRAMalloc `(*.39uc  1 e 2 0 ]
+"313
+[v _SRAMInitHeap SRAMInitHeap `(v  1 e 1 0 ]
+"359
+[v __SRAMmerge _SRAMmerge `(uc  1 e 1 0 ]
+"12 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+[v _conf_timer0 conf_timer0 `(v  1 e 1 0 ]
+"23
+[v _timer_zero_int timer_zero_int `IIH(v  1 e 1 0 ]
+"24 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+[v _user_tasks_config user_tasks_config `(v  1 e 1 0 ]
+"66
+[v _task_um task_um `R(v  1 e 1 0 ]
+"78
+[v _task_dois task_dois `R(v  1 e 1 0 ]
+"90
+[v _task_disp task_disp `R(v  1 e 1 0 ]
+"109
+[v _task_m1 task_m1 `R(v  1 e 1 0 ]
+"131
+[v _task_m2 task_m2 `R(v  1 e 1 0 ]
+"450 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4520.h
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+[s S196 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"669
+[s S205 . 1 `uc 1 PSP0 1 0 :1:0 
+`uc 1 PSP1 1 0 :1:1 
+`uc 1 PSP2 1 0 :1:2 
+`uc 1 PSP3 1 0 :1:3 
+`uc 1 PSP4 1 0 :1:4 
+`uc 1 PSP5 1 0 :1:5 
+`uc 1 PSP6 1 0 :1:6 
+`uc 1 PSP7 1 0 :1:7 
+]
+[s S214 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 P1B 1 0 :1:5 
+`uc 1 P1C 1 0 :1:6 
+`uc 1 P1D 1 0 :1:7 
+]
+[s S219 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S222 . 1 `S196 1 . 1 0 `S205 1 . 1 0 `S214 1 . 1 0 `S219 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES222  1 e 1 @3971 ]
+[s S403 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1509
+[s S412 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S421 . 1 `S403 1 . 1 0 `S412 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES421  1 e 1 @3986 ]
+[s S567 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1731
+[s S576 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S585 . 1 `S567 1 . 1 0 `S576 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES585  1 e 1 @3987 ]
+"1921
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S527 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"2175
+[u S545 . 1 `S527 1 . 1 0 `S196 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES545  1 e 1 @3989 ]
+"4619
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4690
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4775
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S446 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4819
+[s S449 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S453 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S460 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S463 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S466 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S469 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S472 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S475 . 1 `S446 1 . 1 0 `S449 1 . 1 0 `S453 1 . 1 0 `S460 1 . 1 0 `S463 1 . 1 0 `S466 1 . 1 0 `S469 1 . 1 0 `S472 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES475  1 e 1 @4034 ]
+"4901
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4908
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+[s S164 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"6191
+[s S171 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 T0PS3 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 T016BIT 1 0 :1:6 
+]
+[u S178 . 1 `S164 1 . 1 0 `S171 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES178  1 e 1 @4053 ]
+"6258
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"6272
+[v _STATUS STATUS `VEuc  1 e 1 @4056 ]
+"6399
+[v _BSR BSR `VEuc  1 e 1 @4064 ]
+"6462
+[v _WREG WREG `VEuc  1 e 1 @4072 ]
+[s S98 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6724
+[s S107 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S116 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S120 . 1 `S98 1 . 1 0 `S107 1 . 1 0 `S116 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES120  1 e 1 @4082 ]
+"6904
+[v _STKPTR STKPTR `VEuc  1 e 1 @4092 ]
+"6977
+[v _TOS TOS `VEum  1 e 3 @4093 ]
+"6985
+[v _TOSL TOSL `VEuc  1 e 1 @4093 ]
+"6992
+[v _TOSH TOSH `VEuc  1 e 1 @4094 ]
+"6999
+[v _TOSU TOSU `VEuc  1 e 1 @4095 ]
+[s S76 stack_data 3 `uc 1 TOSU_reg 1 0 `uc 1 TOSL_reg 1 1 `uc 1 TOSH_reg 1 2 ]
+"11 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+[s S80 stack 101 `i 1 stack_size 2 0 `[33]S76 1 stack_data 99 2 ]
+[s S84 tcb 113 `ui 1 task_id 2 0 `ui 1 task_priority 2 2 `E2393 1 task_state 1 4 `S80 1 task_stack 101 5 `uc 1 W_reg 1 106 `uc 1 STATUS_reg 1 107 `uc 1 BSR_reg 1 108 `*.37R(v 1 task_ptr 2 109 `i 1 task_delay_time 2 111 ]
+[s S94 fila_aptos 795 `[7]S84 1 APTOS 791 0 `i 1 size 2 791 `ui 1 task_running 2 793 ]
+[v _f_aptos f_aptos `S94  1 e 795 0 ]
+"16 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.h
+[v _stack_size stack_size `i  1 e 2 0 ]
+"144 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+[v __uDynamicHeap _uDynamicHeap `[512]uc  1 e 512 0 ]
+"10 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+[v _quantum quantum `i  1 e 2 0 ]
+"18 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+[v _buffer buffer `*.39uc  1 e 2 0 ]
+[s S516 sem 20 `[7]ui 1 bloqueados 14 0 `i 1 bloqued_tasks 2 14 `i 1 next_task_to_unblock 2 16 `i 1 contador 2 18 ]
+"19
+[v _sem1 sem1 `S516  1 e 20 0 ]
+[v _sem2 sem2 `S516  1 e 20 0 ]
+[v _sem3 sem3 `S516  1 e 20 0 ]
+[v _sem4 sem4 `S516  1 e 20 0 ]
+[v _sem5 sem5 `S516  1 e 20 0 ]
+[s S521 pipe 10 `[2]uc 1 pipe_data 2 0 `ui 1 pipe_size 2 2 `ui 1 pipe_pos_read 2 4 `ui 1 pipe_pos_write 2 6 `ui 1 pipe_task_bloqued 2 8 ]
+"20
+[v _msg1 msg1 `S521  1 e 10 0 ]
+[v _msg2 msg2 `S521  1 e 10 0 ]
+"21
+[v _BATTERY BATTERY `i  1 e 2 0 ]
+"20 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"41
+} 0
+"105 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+[v _start_OS start_OS `(v  1 e 1 0 ]
+{
+"110
+} 0
+"92
+[v _os_config os_config `(v  1 e 1 0 ]
+{
+"103
+} 0
+"24 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+[v _user_tasks_config user_tasks_config `(v  1 e 1 0 ]
+{
+"63
+} 0
+"9 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+[v _seven_seg_init seven_seg_init `(v  1 e 1 0 ]
+{
+"13
+} 0
+"10 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+[v _sem_create sem_create `(v  1 e 1 0 ]
+{
+[s S516 sem 20 `[7]ui 1 bloqueados 14 0 `i 1 bloqued_tasks 2 14 `i 1 next_task_to_unblock 2 16 `i 1 contador 2 18 ]
+[v sem_create@sem sem `*.39S516  1 p 2 14 ]
+[v sem_create@init_value init_value `i  1 p 2 16 ]
+"19
+} 0
+"9 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+[v _pipe_create pipe_create `(v  1 e 1 0 ]
+{
+[s S521 pipe 10 `[2]uc 1 pipe_data 2 0 `ui 1 pipe_size 2 2 `ui 1 pipe_pos_read 2 4 `ui 1 pipe_pos_write 2 6 `ui 1 pipe_task_bloqued 2 8 ]
+[v pipe_create@p p `*.39S521  1 p 2 14 ]
+"15
+} 0
+"191 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+[v _SRAMalloc SRAMalloc `(*.39uc  1 e 2 0 ]
+{
+[v SRAMalloc@nBytes nBytes `uc  1 a 1 wreg ]
+[s S954 _BITS 1 `uc 1 count 1 0 :7:0 
+`uc 1 alloc 1 0 :1:7 
+]
+"193
+[u S957 _SALLOC 1 `uc 1 byte 1 0 `S954 1 bits 1 0 ]
+[v SRAMalloc@pHeap pHeap `*.39S957  1 a 2 31 ]
+"194
+[v SRAMalloc@temp temp `*.39S957  1 a 2 26 ]
+"195
+[v SRAMalloc@segHeader segHeader `S957  1 a 1 29 ]
+"196
+[v SRAMalloc@segLen segLen `uc  1 a 1 28 ]
+"191
+[v SRAMalloc@nBytes nBytes `uc  1 a 1 wreg ]
+"199
+[v SRAMalloc@nBytes nBytes `uc  1 a 1 30 ]
+"263
+} 0
+"359
+[v __SRAMmerge _SRAMmerge `(uc  1 e 1 0 ]
+{
+[s S954 _BITS 1 `uc 1 count 1 0 :7:0 
+`uc 1 alloc 1 0 :1:7 
+]
+"361
+[u S957 _SALLOC 1 `uc 1 byte 1 0 `S954 1 bits 1 0 ]
+[v __SRAMmerge@pSegB pSegB `*.39S957  1 a 2 17 ]
+"362
+[v __SRAMmerge@uSegB uSegB `S957  1 a 1 21 ]
+[v __SRAMmerge@uSegA uSegA `S957  1 a 1 20 ]
+[v __SRAMmerge@uSum uSum `S957  1 a 1 19 ]
+"359
+[v __SRAMmerge@pSegA pSegA `*.39S957  1 p 2 14 ]
+"402
+} 0
+"14 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+[v _create_task create_task `(ui  1 e 2 0 ]
+{
+[v create_task@id id `ui  1 p 2 14 ]
+[v create_task@prior prior `ui  1 p 2 16 ]
+[v create_task@f f `*.37R(v  1 p 2 18 ]
+"29
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `R(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 0 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 -2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 -4 ]
+"53
+} 2
+"12 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+[v _conf_timer0 conf_timer0 `(v  1 e 1 0 ]
+{
+"20
+} 0
+"313 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+[v _SRAMInitHeap SRAMInitHeap `(v  1 e 1 0 ]
+{
+"316
+[v SRAMInitHeap@count count `ui  1 a 2 16 ]
+"315
+[v SRAMInitHeap@pHeap pHeap `*.39uc  1 a 2 14 ]
+"336
+} 0
+"90 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+[v _task_disp task_disp `R(v  1 e 1 0 ]
+{
+"105
+} 0
+"47 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+[v _seven_seg_set seven_seg_set `R(v  1 e 1 0 ]
+{
+"50
+[v seven_seg_set@first first `i  1 a 2 0 ]
+"49
+[v seven_seg_set@last last `i  1 a 2 2 ]
+"47
+[v seven_seg_set@number number `i  1 p 2 -2 ]
+"56
+} 4
+"15
+[v _update_ports update_ports `R(v  1 e 1 0 ]
+{
+[v update_ports@number number `i  1 p 2 -2 ]
+[v update_ports@display display `i  1 p 2 -4 ]
+"45
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `R(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 0 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 2 ]
+[v ___awdiv@counter counter `uc  1 a 1 3 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 -2 ]
+[v ___awdiv@divisor divisor `i  1 p 2 -4 ]
+"41
+} 4
+"21 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+[v _sem_wait sem_wait `R(v  1 e 1 0 ]
+{
+[s S516 sem 20 `[7]ui 1 bloqueados 14 0 `i 1 bloqued_tasks 2 14 `i 1 next_task_to_unblock 2 16 `i 1 contador 2 18 ]
+[v sem_wait@sem sem `*.39S516  1 p 2 -2 ]
+"34
+} 0
+"36
+[v _sem_post sem_post `R(v  1 e 1 0 ]
+{
+[s S516 sem 20 `[7]ui 1 bloqueados 14 0 `i 1 bloqued_tasks 2 14 `i 1 next_task_to_unblock 2 16 `i 1 contador 2 18 ]
+[v sem_post@sem sem `*.39S516  1 p 2 -2 ]
+"49
+} 0
+"119 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+[v _dispatcher dispatcher `R(v  1 e 1 0 ]
+{
+[v dispatcher@state state `E2393  1 p 1 -1 ]
+"135
+} 0
+"47
+[v _rr_scheduler rr_scheduler `R(s  1 e 2 0 ]
+{
+"49
+[v rr_scheduler@next_task next_task `s  1 a 2 0 ]
+"56
+} 2
+"7 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `R(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 0 ]
+[v ___awmod@counter counter `uc  1 a 1 1 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 -2 ]
+[v ___awmod@divisor divisor `i  1 p 2 -4 ]
+"34
+} 2
+"66 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+[v _task_um task_um `R(v  1 e 1 0 ]
+{
+"76
+} 0
+"78
+[v _task_dois task_dois `R(v  1 e 1 0 ]
+{
+"88
+} 0
+"109
+[v _task_m1 task_m1 `R(v  1 e 1 0 ]
+{
+"129
+} 0
+"131
+[v _task_m2 task_m2 `R(v  1 e 1 0 ]
+{
+"151
+} 0
+"112 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+[v _task_idle task_idle `R(v  1 e 1 0 ]
+{
+"117
+} 0
+"23 C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+[v _timer_zero_int timer_zero_int `IIH(v  1 e 1 0 ]
+{
+"49
+} 0

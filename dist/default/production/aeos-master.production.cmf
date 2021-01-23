@@ -1,0 +1,885 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\aeos-master.production.o
+cinit CODE 0 146C 146C 56 1
+intcode_body CODE 0 1122 1122 B4 1
+text0 CODE 0 D8C D8C 10E 1
+text1 CODE 0 16DA 16DA 8 1
+text2 CODE 0 1628 1628 3E 1
+text3 CODE 0 11D6 11D6 9E 1
+text4 CODE 0 16D0 16D0 A 1
+text5 CODE 0 15E6 15E6 42 1
+text6 CODE 0 14C2 14C2 52 1
+text7 CODE 0 C6E C6E 11E 1
+text8 CODE 0 F90 F90 D8 1
+text9 CODE 0 85E 85E 178 1
+text10 CODE 0 130E 130E 96 1
+text11 CODE 0 16BE 16BE 12 1
+text12 CODE 0 13A4 13A4 66 1
+text13 CODE 0 1694 1694 2A 1
+text14 CODE 0 1068 1068 BA 1
+text15 CODE 0 544 544 19E 1
+text16 CODE 0 6E2 6E2 17C 1
+text17 CODE 0 E9A E9A F6 1
+text18 CODE 0 9D6 9D6 14E 1
+text19 CODE 0 14 14 530 1
+text20 CODE 0 1274 1274 9A 1
+text21 CODE 0 B24 B24 14A 1
+text22 CODE 0 15A2 15A2 44 1
+text23 CODE 0 1514 1514 48 1
+text24 CODE 0 140A 140A 62 1
+text25 CODE 0 155C 155C 46 1
+text26 CODE 0 1666 1666 2E 1
+idataCOMRAM CODE 0 16E2 16E2 4 1
+cstackCOMRAM COMRAM 1 41 41 21 1
+temp COMRAM 1 62 62 C 1
+bssBANK0 BANK0 1 80 80 3C 1
+intcode CODE 0 8 8 4 1
+dataCOMRAM COMRAM 1 6E 6E 4 1
+bssBIGRAM BIGRAM 1 BC BC 51B 1
+bssCOMRAM COMRAM 1 1 1 40 1
+$C:\Users\Ale\AppData\Local\Temp\s9qc.o
+idloc IDLOC 0 200000 200000 8 1
+stack STACK 2 5D7 5D7 29 1
+init CODE 0 C C 8 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5D7-5FF 1
+SFR F80-FFF 1
+BANK5 5D7-5FF 1
+CONST 4-7 1
+CONST 16E6-7FFF 1
+SMALLCONST 16E6-7FFF 1
+CODE 4-7 1
+CODE 16E6-7FFF 1
+BIGRAM 72-7F 1
+BIGRAM 5D7-5FF 1
+COMRAM 72-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 16E6-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\aeos-master.production.o
+8 intcode CODE >8510:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+8 intcode CODE >23:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+1122 intcode_body CODE >23:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+1160 intcode_body CODE >26:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+1162 intcode_body CODE >27:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+1166 intcode_body CODE >43:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+1172 intcode_body CODE >44:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+118C intcode_body CODE >45:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+1194 intcode_body CODE >46:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+119C intcode_body CODE >49:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+1666 text26 CODE >112:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1666 text26 CODE >113:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1666 text26 CODE >114:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+168C text26 CODE >115:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+155C text25 CODE >131:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+155C text25 CODE >133:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+155C text25 CODE >134:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1568 text25 CODE >142:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1584 text25 CODE >143:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1586 text25 CODE >144:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+158A text25 CODE >145:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+158E text25 CODE >146:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+158E text25 CODE >147:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1590 text25 CODE >149:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+140A text24 CODE >109:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+140A text24 CODE >111:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+140A text24 CODE >112:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1416 text24 CODE >120:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+144E text24 CODE >121:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1450 text24 CODE >122:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1454 text24 CODE >123:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1458 text24 CODE >124:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1458 text24 CODE >125:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+145A text24 CODE >127:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1514 text23 CODE >78:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1514 text23 CODE >79:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1514 text23 CODE >80:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1520 text23 CODE >81:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1520 text23 CODE >84:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1526 text23 CODE >85:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+154A text23 CODE >86:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+15A2 text22 CODE >66:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+15A2 text22 CODE >67:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+15A2 text22 CODE >68:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+15AE text22 CODE >69:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+15AE text22 CODE >72:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+15B4 text22 CODE >73:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+15D4 text22 CODE >74:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+B24 text21 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B28 text21 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B2C text21 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B3C text21 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B48 text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B4E text21 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B5E text21 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B6A text21 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B84 text21 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B8A text21 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+B8E text21 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+BAC text21 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+BB0 text21 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+BC0 text21 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+BEE text21 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+C12 text21 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+C1C text21 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+C3A text21 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+C4C text21 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+C58 text21 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+C64 text21 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+1274 text20 CODE >47:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1278 text20 CODE >49:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1284 text20 CODE >52:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+12C2 text20 CODE >53:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+12FC text20 CODE >55:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1308 text20 CODE >56:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+14 text19 CODE >119:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+14 text19 CODE >121:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+16 text19 CODE >123:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+27C text19 CODE >126:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+288 text19 CODE >132:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+53E text19 CODE >134:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+540 text19 CODE >135:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+9D6 text18 CODE >36:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+9D6 text18 CODE >38:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+9D8 text18 CODE >40:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+9F6 text18 CODE >41:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+A2C text18 CODE >43:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+A98 text18 CODE >44:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+B14 text18 CODE >45:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+B1C text18 CODE >48:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+B1E text18 CODE >49:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+E9A text17 CODE >21:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+E9A text17 CODE >23:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+E9C text17 CODE >25:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+EBA text17 CODE >26:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+EE2 text17 CODE >28:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+F30 text17 CODE >29:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+F80 text17 CODE >30:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+F88 text17 CODE >33:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+F8A text17 CODE >34:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+6E2 text16 CODE >7:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6EA text16 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6EE text16 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6FE text16 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+70A text16 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+710 text16 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+720 text16 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+72C text16 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+730 text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+738 text16 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+752 text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+758 text16 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+75C text16 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+77A text16 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+77E text16 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+78E text16 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7AC text16 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7DA text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+7FE text16 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+802 text16 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+80C text16 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+82A text16 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+83C text16 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+848 text16 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+854 text16 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+544 text15 CODE >15:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+544 text15 CODE >16:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+562 text15 CODE >18:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+568 text15 CODE >19:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+570 text15 CODE >20:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+578 text15 CODE >21:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+580 text15 CODE >22:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+588 text15 CODE >23:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+590 text15 CODE >24:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+598 text15 CODE >25:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+5A0 text15 CODE >26:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+5A8 text15 CODE >27:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+5B0 text15 CODE >17:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+620 text15 CODE >33:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+628 text15 CODE >34:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+630 text15 CODE >35:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+638 text15 CODE >36:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+640 text15 CODE >37:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+648 text15 CODE >38:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+650 text15 CODE >39:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+658 text15 CODE >40:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+660 text15 CODE >41:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+668 text15 CODE >31:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+6D8 text15 CODE >45:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+1068 text14 CODE >47:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+1070 text14 CODE >48:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+1096 text14 CODE >49:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+10B8 text14 CODE >50:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+10DA text14 CODE >51:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+10F0 text14 CODE >52:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+10FE text14 CODE >53:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+1102 text14 CODE >54:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+1118 text14 CODE >56:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+1694 text13 CODE >90:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1694 text13 CODE >91:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1694 text13 CODE >95:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+16A0 text13 CODE >102:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+16AC text13 CODE >103:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+13A4 text12 CODE >313:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13A4 text12 CODE >318:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13AC text12 CODE >319:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13B2 text12 CODE >323:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13C8 text12 CODE >325:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13D4 text12 CODE >326:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13DC text12 CODE >327:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13E8 text12 CODE >328:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13EC text12 CODE >331:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+13F8 text12 CODE >332:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1408 text12 CODE >336:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+16BE text11 CODE >12:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+16BE text11 CODE >14:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+16C0 text11 CODE >15:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+16C2 text11 CODE >16:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+16C4 text11 CODE >17:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+16C6 text11 CODE >18:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+16CA text11 CODE >19:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+16CE text11 CODE >20:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\timer_0.c
+130E text10 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+1312 text10 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+132A text10 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+135C text10 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+138E text10 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+139A text10 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\Umul16.c
+85E text9 CODE >14:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+85E text9 CODE >16:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+882 text9 CODE >17:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+88E text9 CODE >19:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+8C2 text9 CODE >20:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+8F6 text9 CODE >21:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+92A text9 CODE >22:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+95E text9 CODE >23:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+98E text9 CODE >24:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+9C2 text9 CODE >26:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+9CC text9 CODE >28:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+9D4 text9 CODE >29:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+F90 text8 CODE >359:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+F90 text8 CODE >365:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+FA8 text8 CODE >368:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+FB4 text8 CODE >369:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+FC0 text8 CODE >372:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+FD6 text8 CODE >375:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+FF6 text8 CODE >378:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+100E text8 CODE >381:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1014 text8 CODE >387:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1024 text8 CODE >389:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1030 text8 CODE >390:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1038 text8 CODE >391:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1044 text8 CODE >392:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1052 text8 CODE >394:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1058 text8 CODE >400:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+1066 text8 CODE >402:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+C6E text7 CODE >191:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+C70 text7 CODE >199:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+C8C text7 CODE >202:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+C94 text7 CODE >207:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+CA0 text7 CODE >210:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+CAA text7 CODE >213:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+CBE text7 CODE >216:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+CCC text7 CODE >219:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+CDE text7 CODE >222:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D10 text7 CODE >228:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D22 text7 CODE >231:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D2C text7 CODE >234:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D3C text7 CODE >241:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D4A text7 CODE >244:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D56 text7 CODE >247:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D6C text7 CODE >250:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D7A text7 CODE >253:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D86 text7 CODE >261:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+D8A text7 CODE >263:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\sralloc.c
+14C2 text6 CODE >9:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+14C2 text6 CODE >11:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+14D6 text6 CODE >12:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+14EA text6 CODE >13:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+14FE text6 CODE >14:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+1512 text6 CODE >15:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\pipe.c
+15E6 text5 CODE >10:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+15E6 text5 CODE >12:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+15E8 text5 CODE >14:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+15FC text5 CODE >15:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+1610 text5 CODE >16:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+1624 text5 CODE >18:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+1626 text5 CODE >19:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\semaphore.c
+16D0 text4 CODE >9:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+16D0 text4 CODE >11:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+16D4 text4 CODE >12:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+16D8 text4 CODE >13:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\seven_seg.c
+11D6 text3 CODE >24:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11D6 text3 CODE >27:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11D8 text3 CODE >28:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11DA text3 CODE >29:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11DC text3 CODE >32:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11DE text3 CODE >33:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11E0 text3 CODE >35:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11E2 text3 CODE >36:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11E4 text3 CODE >37:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11E6 text3 CODE >40:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11E8 text3 CODE >41:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11EA text3 CODE >42:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11EC text3 CODE >43:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11EE text3 CODE >44:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11F0 text3 CODE >45:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11F2 text3 CODE >46:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11F4 text3 CODE >49:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11F6 text3 CODE >50:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11F8 text3 CODE >53:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+11FC text3 CODE >55:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+120A text3 CODE >57:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+121E text3 CODE >58:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1232 text3 CODE >59:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1246 text3 CODE >60:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+125A text3 CODE >61:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1266 text3 CODE >62:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1272 text3 CODE >63:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\user_tasks.c
+1628 text2 CODE >92:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1628 text2 CODE >94:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1634 text2 CODE >95:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1640 text2 CODE >98:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+165C text2 CODE >100:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1660 text2 CODE >102:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+1664 text2 CODE >103:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+16DA text1 CODE >105:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+16DA text1 CODE >107:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+16DC text1 CODE >108:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+16DE text1 CODE >109:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+16E0 text1 CODE >110:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\kernel.c
+D8C text0 CODE >20:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+D8C text0 CODE >22:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+D90 text0 CODE >24:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+D94 text0 CODE >27:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+DC6 text0 CODE >28:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+DF8 text0 CODE >29:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+E2A text0 CODE >30:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+E5C text0 CODE >31:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+E8E text0 CODE >36:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+E92 text0 CODE >38:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+E96 text0 CODE >41:C:\Users\Ale\Documents\ufsc\9-semestre\soembarcado\aeos-master\main.c
+146C cinit CODE >2537:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+146C cinit CODE >2539:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+146C cinit CODE >2542:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+146C cinit CODE >2605:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+146E cinit CODE >2606:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1470 cinit CODE >2607:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1472 cinit CODE >2608:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1474 cinit CODE >2609:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1476 cinit CODE >2610:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1478 cinit CODE >2611:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+147C cinit CODE >2612:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1480 cinit CODE >2613:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1480 cinit CODE >2614:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1482 cinit CODE >2615:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1486 cinit CODE >2616:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1488 cinit CODE >2617:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+148A cinit CODE >2618:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+148C cinit CODE >2622:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1490 cinit CODE >2623:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1494 cinit CODE >2624:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1494 cinit CODE >2625:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1496 cinit CODE >2626:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+1498 cinit CODE >2627:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+149A cinit CODE >2628:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+149C cinit CODE >2629:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+149E cinit CODE >2630:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14A0 cinit CODE >2633:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14A4 cinit CODE >2634:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14A6 cinit CODE >2635:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14A6 cinit CODE >2636:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14A8 cinit CODE >2637:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14AA cinit CODE >2638:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14AC cinit CODE >2641:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14B0 cinit CODE >2642:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14B2 cinit CODE >2643:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14B2 cinit CODE >2644:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14B4 cinit CODE >2645:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14B6 cinit CODE >2646:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14B8 cinit CODE >2652:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14B8 cinit CODE >2655:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14BA cinit CODE >2656:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14BC cinit CODE >2657:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+14BE cinit CODE >2658:C:\Users\Ale\AppData\Local\Temp\s9qc.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\aeos-master.production.o
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Hspace_1 5D7 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Hspace_2 600 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_user_tasks_config 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\aeos-master.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Ale\AppData\Local\Temp\s9qc.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\aeos-master.production.o
+ltemp0 62 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ltemp1 66 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ltemp2 6A 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\aeos-master.production.o
+_TOSH FFE 0 ABS 0 - dist/default/production\aeos-master.production.o
+_TOSL FFD 0 ABS 0 - dist/default/production\aeos-master.production.o
+_TOSU FFF 0 ABS 0 - dist/default/production\aeos-master.production.o
+_WREG FE8 0 ABS 0 - dist/default/production\aeos-master.production.o
+___sp 5D7 0 STACK 2 stack C:\Users\Ale\AppData\Local\Temp\s9qc.o
+_main D8C 0 CODE 0 text0 dist/default/production\aeos-master.production.o
+_msg1 37 0 COMRAM 1 bssCOMRAM dist/default/production\aeos-master.production.o
+_msg2 2D 0 COMRAM 1 bssCOMRAM dist/default/production\aeos-master.production.o
+_sem1 19 0 COMRAM 1 bssCOMRAM dist/default/production\aeos-master.production.o
+_sem2 5 0 COMRAM 1 bssCOMRAM dist/default/production\aeos-master.production.o
+_sem3 A8 0 BANK0 1 bssBANK0 dist/default/production\aeos-master.production.o
+_sem4 94 0 BANK0 1 bssBANK0 dist/default/production\aeos-master.production.o
+_sem5 80 0 BANK0 1 bssBANK0 dist/default/production\aeos-master.production.o
+btemp 62 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\aeos-master.production.o
+__size_of_SRAMInitHeap 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+start C 0 CODE 0 init C:\Users\Ale\AppData\Local\Temp\s9qc.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\aeos-master.production.o
+__size_of__SRAMmerge 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__end_of_conf_timer0 16D0 0 CODE 0 text11 dist/default/production\aeos-master.production.o
+sem_create@init_value 51 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+_start_OS 16DA 0 CODE 0 text1 dist/default/production\aeos-master.production.o
+__Hpowerup C 0 CODE 0 powerup dist/default/production\aeos-master.production.o
+_timer_zero_int 8 0 CODE 0 intcode dist/default/production\aeos-master.production.o
+SRAMalloc@segHeader 5E 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+_T0CONbits FD5 0 ABS 0 - dist/default/production\aeos-master.production.o
+ttemp0 62 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ttemp1 65 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ttemp2 68 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ttemp3 6B 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ttemp5 63 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ttemp6 66 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+ttemp7 6A 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\aeos-master.production.o
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\aeos-master.production.o
+__end_of_SRAMInitHeap 140A 0 CODE 0 text12 dist/default/production\aeos-master.production.o
+__end_of_start_OS 16E2 0 CODE 0 text1 dist/default/production\aeos-master.production.o
+__accesstop 80 0 ABS 0 - C:\Users\Ale\AppData\Local\Temp\s9qc.o
+intlevel0 0 0 CODE 0 text C:\Users\Ale\AppData\Local\Temp\s9qc.o
+intlevel1 0 0 CODE 0 text C:\Users\Ale\AppData\Local\Temp\s9qc.o
+intlevel2 0 0 CODE 0 text C:\Users\Ale\AppData\Local\Temp\s9qc.o
+intlevel3 0 0 CODE 0 text C:\Users\Ale\AppData\Local\Temp\s9qc.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\aeos-master.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\aeos-master.production.o
+wtemp0 62 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+wtemp1 64 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+wtemp2 66 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+wtemp3 68 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+wtemp4 6A 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+wtemp5 6C 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+wtemp8 63 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\aeos-master.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\aeos-master.production.o
+__pidataCOMRAM 16E2 0 CODE 0 idataCOMRAM dist/default/production\aeos-master.production.o
+_pipe_create 14C2 0 CODE 0 text6 dist/default/production\aeos-master.production.o
+_create_task 85E 0 CODE 0 text9 dist/default/production\aeos-master.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\aeos-master.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\aeos-master.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\aeos-master.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\aeos-master.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production\aeos-master.production.o
+___inthi_sp 5E6 0 STACK 2 stack C:\Users\Ale\AppData\Local\Temp\s9qc.o
+___intlo_sp 5F3 0 STACK 2 stack C:\Users\Ale\AppData\Local\Temp\s9qc.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\aeos-master.production.o
+sem_create@sem 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\aeos-master.production.o
+create_task@prior 51 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__end_of___wmul 13A4 0 CODE 0 text10 dist/default/production\aeos-master.production.o
+SRAMInitHeap@count 51 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+SRAMInitHeap@pHeap 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__end_of_timer_zero_int 11D6 0 CODE 0 intcode_body dist/default/production\aeos-master.production.o
+_quantum 70 0 COMRAM 1 dataCOMRAM dist/default/production\aeos-master.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\aeos-master.production.o
+__end_of_user_tasks_config 1274 0 CODE 0 text3 dist/default/production\aeos-master.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\aeos-master.production.o
+__Hintcodelo C 0 CODE 0 intcodelo dist/default/production\aeos-master.production.o
+__end_of___awdiv 85E 0 CODE 0 text16 dist/default/production\aeos-master.production.o
+__end_of___awmod C6E 0 CODE 0 text21 dist/default/production\aeos-master.production.o
+_sem_create 15E6 0 CODE 0 text5 dist/default/production\aeos-master.production.o
+__size_of_seven_seg_init 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\aeos-master.production.o
+_stack_size 3 0 COMRAM 1 bssCOMRAM dist/default/production\aeos-master.production.o
+__Lintcodelo C 0 CODE 0 intcodelo dist/default/production\aeos-master.production.o
+start_initialization 146C 0 CODE 0 cinit dist/default/production\aeos-master.production.o
+_seven_seg_set 1068 0 CODE 0 text14 dist/default/production\aeos-master.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\aeos-master.production.o
+_TRISAbits F92 0 ABS 0 - dist/default/production\aeos-master.production.o
+_TRISBbits F93 0 ABS 0 - dist/default/production\aeos-master.production.o
+_TRISDbits F95 0 ABS 0 - dist/default/production\aeos-master.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_conf_timer0 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+_STATUS FD8 0 ABS 0 - dist/default/production\aeos-master.production.o
+_STKPTR FFC 0 ABS 0 - dist/default/production\aeos-master.production.o
+__end_of_SRAMalloc D8C 0 CODE 0 text7 dist/default/production\aeos-master.production.o
+__size_of_SRAMalloc 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_task_m1 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_task_m2 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_task_um 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\aeos-master.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\aeos-master.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\aeos-master.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\aeos-master.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\aeos-master.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\aeos-master.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\aeos-master.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\aeos-master.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\aeos-master.production.o
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\aeos-master.production.o
+__end_of_sem_create 1628 0 CODE 0 text5 dist/default/production\aeos-master.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\aeos-master.production.o
+create_task@id 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\aeos-master.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\aeos-master.production.o
+__Hstack 600 0 STACK 2 stack dist/default/production\aeos-master.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\aeos-master.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\aeos-master.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\aeos-master.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\aeos-master.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\aeos-master.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\aeos-master.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\aeos-master.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\aeos-master.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\aeos-master.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\aeos-master.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\aeos-master.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\aeos-master.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Ale\AppData\Local\Temp\s9qc.o
+_user_tasks_config 11D6 0 CODE 0 text3 dist/default/production\aeos-master.production.o
+_SRAMalloc C6E 0 CODE 0 text7 dist/default/production\aeos-master.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\aeos-master.production.o
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\aeos-master.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\aeos-master.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\aeos-master.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\aeos-master.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\aeos-master.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\aeos-master.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\aeos-master.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\aeos-master.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\aeos-master.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\aeos-master.production.o
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\aeos-master.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\aeos-master.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\aeos-master.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\aeos-master.production.o
+__Lstack 5D7 0 STACK 2 stack dist/default/production\aeos-master.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\aeos-master.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\aeos-master.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\aeos-master.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\aeos-master.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\aeos-master.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\aeos-master.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\aeos-master.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\aeos-master.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\aeos-master.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\aeos-master.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\aeos-master.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\aeos-master.production.o
+_PORTDbits F83 0 ABS 0 - dist/default/production\aeos-master.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\aeos-master.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\aeos-master.production.o
+__Hinit 14 0 CODE 0 init dist/default/production\aeos-master.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\aeos-master.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\aeos-master.production.o
+__Htemp 6E 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+__Htext 0 0 ABS 0 text dist/default/production\aeos-master.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\aeos-master.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\aeos-master.production.o
+__Linit C 0 CODE 0 init dist/default/production\aeos-master.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\aeos-master.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\aeos-master.production.o
+__Ltemp 62 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\aeos-master.production.o
+___wmul 130E 0 CODE 0 text10 dist/default/production\aeos-master.production.o
+_rr_scheduler 1274 0 CODE 0 text20 dist/default/production\aeos-master.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\aeos-master.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\aeos-master.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\aeos-master.production.o
+_BSR FE0 0 ABS 0 - dist/default/production\aeos-master.production.o
+_TOS FFD 0 ABS 0 - dist/default/production\aeos-master.production.o
+__S0 30000E 0 ABS 0 - dist/default/production\aeos-master.production.o
+__S1 5D7 0 ABS 0 - dist/default/production\aeos-master.production.o
+__S2 600 0 ABS 0 - dist/default/production\aeos-master.production.o
+_dispatcher 14 0 CODE 0 text19 dist/default/production\aeos-master.production.o
+lltemp0 62 0 COMRAM 1 temp dist/default/production\aeos-master.production.o
+_buffer 1 0 COMRAM 1 bssCOMRAM dist/default/production\aeos-master.production.o
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_seven_seg_set 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\aeos-master.production.o
+__uDynamicHeap 3D7 0 BIGRAM 1 bssBIGRAM dist/default/production\aeos-master.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\aeos-master.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\aeos-master.production.o
+__end_of_task_disp 16BE 0 CODE 0 text13 dist/default/production\aeos-master.production.o
+__end_of_task_dois 155C 0 CODE 0 text23 dist/default/production\aeos-master.production.o
+__end_of_task_idle 1694 0 CODE 0 text26 dist/default/production\aeos-master.production.o
+int_func 1122 0 CODE 0 intcode_body dist/default/production\aeos-master.production.o
+__size_of_task_disp 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_task_dois 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_task_idle 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\aeos-master.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\aeos-master.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\aeos-master.production.o
+SRAMalloc@nBytes 5F 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__size_of_sem_post 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_sem_wait 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\aeos-master.production.o
+__SRAMmerge@pSegA 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__SRAMmerge@pSegB 52 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__size_of_rr_scheduler 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\aeos-master.production.o
+__SRAMmerge@uSegA 55 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__SRAMmerge@uSegB 56 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\aeos-master.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\aeos-master.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\aeos-master.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\aeos-master.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\aeos-master.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\aeos-master.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\aeos-master.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\aeos-master.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\aeos-master.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\aeos-master.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\aeos-master.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\aeos-master.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\aeos-master.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\aeos-master.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\aeos-master.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\aeos-master.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\aeos-master.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\aeos-master.production.o
+__end_of_pipe_create 1514 0 CODE 0 text6 dist/default/production\aeos-master.production.o
+__end_of_create_task 9D6 0 CODE 0 text9 dist/default/production\aeos-master.production.o
+__end_of_task_m1 146C 0 CODE 0 text24 dist/default/production\aeos-master.production.o
+__end_of_task_m2 15A2 0 CODE 0 text25 dist/default/production\aeos-master.production.o
+__end_of_task_um 15E6 0 CODE 0 text22 dist/default/production\aeos-master.production.o
+_task_disp 1694 0 CODE 0 text13 dist/default/production\aeos-master.production.o
+_task_dois 1514 0 CODE 0 text23 dist/default/production\aeos-master.production.o
+_task_idle 1666 0 CODE 0 text26 dist/default/production\aeos-master.production.o
+SRAMalloc@pHeap 60 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__end_of_seven_seg_set 1122 0 CODE 0 text14 dist/default/production\aeos-master.production.o
+__ptext10 130E 0 CODE 0 text10 dist/default/production\aeos-master.production.o
+__ptext11 16BE 0 CODE 0 text11 dist/default/production\aeos-master.production.o
+__ptext12 13A4 0 CODE 0 text12 dist/default/production\aeos-master.production.o
+__ptext13 1694 0 CODE 0 text13 dist/default/production\aeos-master.production.o
+__ptext14 1068 0 CODE 0 text14 dist/default/production\aeos-master.production.o
+__ptext15 544 0 CODE 0 text15 dist/default/production\aeos-master.production.o
+__ptext16 6E2 0 CODE 0 text16 dist/default/production\aeos-master.production.o
+__ptext17 E9A 0 CODE 0 text17 dist/default/production\aeos-master.production.o
+__ptext18 9D6 0 CODE 0 text18 dist/default/production\aeos-master.production.o
+__ptext19 14 0 CODE 0 text19 dist/default/production\aeos-master.production.o
+__ptext20 1274 0 CODE 0 text20 dist/default/production\aeos-master.production.o
+__ptext21 B24 0 CODE 0 text21 dist/default/production\aeos-master.production.o
+__ptext22 15A2 0 CODE 0 text22 dist/default/production\aeos-master.production.o
+__ptext23 1514 0 CODE 0 text23 dist/default/production\aeos-master.production.o
+__ptext24 140A 0 CODE 0 text24 dist/default/production\aeos-master.production.o
+__ptext25 155C 0 CODE 0 text25 dist/default/production\aeos-master.production.o
+__ptext26 1666 0 CODE 0 text26 dist/default/production\aeos-master.production.o
+___awdiv 6E2 0 CODE 0 text16 dist/default/production\aeos-master.production.o
+___awmod B24 0 CODE 0 text21 dist/default/production\aeos-master.production.o
+_BATTERY 6E 0 COMRAM 1 dataCOMRAM dist/default/production\aeos-master.production.o
+__pintcode_body 1122 0 CODE 0 intcode_body dist/default/production\aeos-master.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\aeos-master.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\aeos-master.production.o
+__end_of_dispatcher 544 0 CODE 0 text19 dist/default/production\aeos-master.production.o
+SRAMalloc@segLen 5D 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__SRAMmerge F90 0 CODE 0 text8 dist/default/production\aeos-master.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\aeos-master.production.o
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\aeos-master.production.o
+_update_ports 544 0 CODE 0 text15 dist/default/production\aeos-master.production.o
+__end_of_rr_scheduler 130E 0 CODE 0 text20 dist/default/production\aeos-master.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\aeos-master.production.o
+__size_of_timer_zero_int 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\aeos-master.production.o
+_conf_timer0 16BE 0 CODE 0 text11 dist/default/production\aeos-master.production.o
+stackhi 5FF 0 ABS 0 - C:\Users\Ale\AppData\Local\Temp\s9qc.o
+stacklo 5D7 0 ABS 0 - C:\Users\Ale\AppData\Local\Temp\s9qc.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\aeos-master.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\aeos-master.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\aeos-master.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\aeos-master.production.o
+_sem_post 9D6 0 CODE 0 text18 dist/default/production\aeos-master.production.o
+_sem_wait E9A 0 CODE 0 text17 dist/default/production\aeos-master.production.o
+__pbssBIGRAM BC 0 BIGRAM 1 bssBIGRAM dist/default/production\aeos-master.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\aeos-master.production.o
+create_task@f 53 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\aeos-master.production.o
+_f_aptos BC 0 BIGRAM 1 bssBIGRAM dist/default/production\aeos-master.production.o
+__size_of_sem_create 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__end_of_sem_post B24 0 CODE 0 text18 dist/default/production\aeos-master.production.o
+__end_of_sem_wait F90 0 CODE 0 text17 dist/default/production\aeos-master.production.o
+end_of_initialization 14B8 0 CODE 0 cinit dist/default/production\aeos-master.production.o
+_seven_seg_init 16D0 0 CODE 0 text4 dist/default/production\aeos-master.production.o
+__size_of_update_ports 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\aeos-master.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\aeos-master.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\aeos-master.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\aeos-master.production.o
+__end_of__SRAMmerge 1068 0 CODE 0 text8 dist/default/production\aeos-master.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\aeos-master.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\aeos-master.production.o
+__pcinit 146C 0 CODE 0 cinit dist/default/production\aeos-master.production.o
+__ptext0 D8C 0 CODE 0 text0 dist/default/production\aeos-master.production.o
+__ptext1 16DA 0 CODE 0 text1 dist/default/production\aeos-master.production.o
+__ptext2 1628 0 CODE 0 text2 dist/default/production\aeos-master.production.o
+__ptext3 11D6 0 CODE 0 text3 dist/default/production\aeos-master.production.o
+__ptext4 16D0 0 CODE 0 text4 dist/default/production\aeos-master.production.o
+__ptext5 15E6 0 CODE 0 text5 dist/default/production\aeos-master.production.o
+__ptext6 14C2 0 CODE 0 text6 dist/default/production\aeos-master.production.o
+__ptext7 C6E 0 CODE 0 text7 dist/default/production\aeos-master.production.o
+__ptext8 F90 0 CODE 0 text8 dist/default/production\aeos-master.production.o
+__ptext9 85E 0 CODE 0 text9 dist/default/production\aeos-master.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\aeos-master.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\aeos-master.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\aeos-master.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\aeos-master.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\aeos-master.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\aeos-master.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\aeos-master.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\aeos-master.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\aeos-master.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\aeos-master.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\aeos-master.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\aeos-master.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\aeos-master.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\aeos-master.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\aeos-master.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\aeos-master.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\aeos-master.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\aeos-master.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\Ale\AppData\Local\Temp\s9qc.o
+__end_of_os_config 1666 0 CODE 0 text2 dist/default/production\aeos-master.production.o
+__end_of_update_ports 6E2 0 CODE 0 text15 dist/default/production\aeos-master.production.o
+__Lpowerup C 0 CODE 0 powerup dist/default/production\aeos-master.production.o
+__size_of_os_config 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\aeos-master.production.o
+?_create_task 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\aeos-master.production.o
+__SRAMmerge@uSum 54 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\aeos-master.production.o
+__end_of__initialization 14B8 0 CODE 0 cinit dist/default/production\aeos-master.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\aeos-master.production.o
+_os_config 1628 0 CODE 0 text2 dist/default/production\aeos-master.production.o
+__end_of_seven_seg_init 16DA 0 CODE 0 text4 dist/default/production\aeos-master.production.o
+__size_of_pipe_create 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__size_of_create_task 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\aeos-master.production.o
+SRAMalloc@temp 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__pcstackCOMRAM 41 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__end_of_main E9A 0 CODE 0 text0 dist/default/production\aeos-master.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\aeos-master.production.o
+_PORTC F82 0 ABS 0 - dist/default/production\aeos-master.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\aeos-master.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\aeos-master.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\aeos-master.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\aeos-master.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\aeos-master.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\aeos-master.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\aeos-master.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\aeos-master.production.o
+__size_of_dispatcher 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+_task_m1 140A 0 CODE 0 text24 dist/default/production\aeos-master.production.o
+_task_m2 155C 0 CODE 0 text25 dist/default/production\aeos-master.production.o
+_task_um 15A2 0 CODE 0 text22 dist/default/production\aeos-master.production.o
+__initialization 146C 0 CODE 0 cinit dist/default/production\aeos-master.production.o
+?_SRAMalloc 57 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__pbssBANK0 80 0 BANK0 1 bssBANK0 dist/default/production\aeos-master.production.o
+__pdataCOMRAM 6E 0 COMRAM 1 dataCOMRAM dist/default/production\aeos-master.production.o
+_SRAMInitHeap 13A4 0 CODE 0 text12 dist/default/production\aeos-master.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\aeos-master.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\aeos-master.production.o
+__size_of_start_OS 0 0 ABS 0 - dist/default/production\aeos-master.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\aeos-master.production.o
+pipe_create@p 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\aeos-master.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\aeos-master.production.o
+__Hintcode C 0 CODE 0 intcode dist/default/production\aeos-master.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+stack 2 5D7 5D7 29 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 80 80 3C 1
+intcode 0 8 8 16DE 1
+bssBIGRAM 1 BC BC 51B 1
+bssCOMRAM 1 1 1 71 1
+config 0 300000 300000 E 1
+# OTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by OTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
